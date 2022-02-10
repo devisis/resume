@@ -34,6 +34,10 @@
     background-color: #92140c;
 }
 
+.ui-menu-color-github {
+    background-color: #001524;
+}
+
 .ui-menu-color-download {
     background-color: #00afb5;
 }
@@ -383,3 +387,7 @@ button[type="submit"] {
         max-width: 50%;
     }
 }
+
+/* ------------------------- Map */
+
+div#map {min-height: 360px;}
