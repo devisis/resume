@@ -122,36 +122,7 @@
         </div>
     </footer>
 </body>
-<script>
-    function initMap() {
-        const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 6,
-            center: {
-                lat: 52.3555,
-                lng: 1.1743
-            }
-        });
-        new google.maps.Marker({
-            position: {lat: 51.465247 , lng:-0.035574},
-            map,
-            title: "Home",
-        });
-        // const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        // const locations = [
-        //     { lat:51.465247, lng:-0.035574}
-        // ];
-
-        // const markers = locations.map((location, i) => {
-        //     return new google.maps.Marker({
-        //         position: location,
-        //         label: labels[i % labels.length]
-
-        //     });
-        // });
-        // const markerCluster = new MarkerClusterer({ markers, map });
-    }
-
-</script>
+<script src="assets/js/maps.js"></script>
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
 </script>
 <script async defer
