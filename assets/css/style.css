@@ -394,19 +394,23 @@ footer {
     color: white;
 }
 
+i {
+    color: aliceblue;
+    margin: 0.5rem;
+}
 
-.project-item i:hover{
+i:hover{
     color: #00afb5;
 }
 
 .project-item button {
     color: #00afb5;
-    background-color: #161b22;
+    background: linear-gradient(to right, #161b22, #242f3e);
 }
 
 .project-item button:hover {
     color: #161b22;
-    background-color: #00afb5;
+    background: #00afb5;
 }
 
 .projects-carousel-container {
