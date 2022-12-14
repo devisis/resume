@@ -414,6 +414,7 @@ i:hover{
 }
 
 .projects-carousel-container {
+    padding: 3rem 0 3rem 0;
     max-width: 95%;
     margin: 0 auto;
 }
