@@ -8,7 +8,7 @@
 }
 
 .ui-menu-color-home,
-.bg-color-personal-info {
+.bg-color-home {
     background-color: #d4b69a;
 }
 
@@ -24,8 +24,14 @@
 
 .ui-menu-color-github,
 .bg-color-github {
-    background-color: #001524;
+    background-color: #242f3e;
 }
+
+.ui-menu-color-projects,
+.bg-color-projects {
+    background-color: #161b22;
+}
+
 
 .ui-menu-color-download {
     background-color: #00afb5;
@@ -235,6 +241,7 @@ footer {
 /* ------------------------- Personal Info */
 
 .personal-info-item {
+    padding-top: 5px;
     margin-bottom: 20px;
     display: block;
     clear: both;
@@ -337,6 +344,86 @@ footer {
 .history-items {
     margin-bottom: 30px;
 }
+
+/* ------------------------- Projects Section */
+.projects-main {
+    background: linear-gradient(#161b22, #242f3e);
+}
+
+.project-descriptions p {
+    padding: 1rem;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+}
+
+.carousel-caption {
+    border-radius: 1%;
+    background-color: rgba(25, 25, 25, 0.4);
+    padding: 0;
+}
+
+.project-item {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 2px #161b22;
+    border-style: none solid double none;
+    border-radius: 1%;
+}
+
+.project-item:nth-of-type(1) {
+    background: linear-gradient(#052236, #161b22);
+    color: white;
+}
+
+.project-item:nth-of-type(2) {
+    background: linear-gradient(#161b22, #777777 );
+    color: white;
+    /* background: #12232e; */
+}
+
+.project-item:nth-of-type(3) {
+    background: linear-gradient(#0a72e7, #020911);
+    color: #fca311;
+}
+
+.project-item:nth-of-type(4) {
+    background: linear-gradient(#161b22, #00afb5);
+    color: white;
+}
+
+
+.project-item i:hover{
+    color: #00afb5;
+}
+
+.project-item button {
+    color: #00afb5;
+    background-color: #161b22;
+}
+
+.project-item button:hover {
+    color: #161b22;
+    background-color: #00afb5;
+}
+
+.projects-carousel-container {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.project-descriptions li {
+    list-style-type:circle ;
+    font-size: small;
+}
+
+.project-descriptions button {
+    margin: 0 auto;
+
+}
+
 
 /* ------------------------- Github Section */
 .github-section p {
