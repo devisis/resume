@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
-
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Great+Vibes&family=Lato:wght@300&family=Prata&family=Roboto:wght@300&family=Tourney:wght@300&family=Yanone+Kaffeesatz:wght@300&display=swap');
 /* ------------------------- Colours */
 
 .bg-color-contact,
@@ -200,10 +199,6 @@ footer {
     -o-transition: all 0.35s ease-in-out;
 }
 
-.cv-pdf i:hover {
-    color: #00afb5;
-}
-
 .social-links {
     padding-bottom: 15px;
 }
@@ -240,24 +235,30 @@ footer {
 
 /* ------------------------- Personal Info */
 
-.personal-info-item {
+.personal-info-item,
+.project-info-item {
     padding-top: 5px;
     margin-bottom: 20px;
     display: block;
     clear: both;
 }
 
+.project-info-item .key,
+.project-info-item .value,
 .personal-info-item .key,
 .personal-info-item .value {
     padding-right: 8px;
     display: inline-block;
 }
 
+.project-info-item .key p,
+.project-info-item .value p,
 .personal-info-item .key p,
 .personal-info-item .value p {
     margin: 0;
 }
 
+.project-info-item .key,
 .personal-info-item .key {
     width: 30%;
     margin-right: 21px;
@@ -265,11 +266,12 @@ footer {
     vertical-align: top;
 }
 
-
+.project-info-item .key p,
 .personal-info-item .key p {
     font-weight: 700;
 }
 
+.project-info-item .value,
 .personal-info-item .value {
     width: 60%;
     position: relative;
@@ -373,25 +375,111 @@ footer {
     border-radius: 1%;
 }
 
+.project-item button {
+    color: white;
+    font-weight: 600;
+}
+
+.project-item button:hover {
+    background-color: #00afb5;
+}
+
+.project-info-item .key p {
+    font-size: 20px;
+}
+
+/* Sandras Kitchen */
+.project-item:nth-of-type(1) i:hover {
+    color: #0d6efd;
+}
+
+.project-item:nth-of-type(1) button {
+    background: #0d6efd;
+}
+
 .project-item:nth-of-type(1) {
     background: linear-gradient(#052236, #161b22);
     color: white;
+    font-family: 'Dosis', sans-serif;
+}
+
+.project-item:nth-of-type(1) h4,
+.project-info-item:nth-of-type(1) .key p {
+    font-family: 'Great Vibes', cursive;
+    color: #0d6efd;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+/* My Rag */
+.project-item:nth-of-type(2) i:hover {
+    color: #28a745;
+}
+
+.project-item:nth-of-type(2) button {
+    background: #28a745;
 }
 
 .project-item:nth-of-type(2) {
-    background: linear-gradient(#161b22, #777777 );
+    background: linear-gradient(#161b22, #777777);
     color: white;
+    font-family: 'Lato', sans-serif;
     /* background: #12232e; */
+}
+
+.project-item:nth-of-type(2) h4,
+.project-info-item:nth-of-type(2) .key p {
+    font-family: 'Prata', serif;
+    color: #28a745;
+}
+
+/* RPSLS */
+.project-item:nth-of-type(3) i:hover {
+    color: #ed2127;
+
+}
+
+.project-item:nth-of-type(3) button {
+    background-image: linear-gradient(to bottom, #ffa260, #ed2127);
+
 }
 
 .project-item:nth-of-type(3) {
     background: linear-gradient(#0a72e7, #020911);
     color: #fca311;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.project-item:nth-of-type(3) li {
+    font-size: 15px;
+}
+
+.project-info-item:nth-of-type(3) .key p {
+    color: #fca311;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+/* Coming Home */
+
+.project-item:nth-of-type(4) i:hover {
+    color: #f00;
+}
+
+.project-item:nth-of-type(4) button {
+    background: #f00;
+
 }
 
 .project-item:nth-of-type(4) {
     background: linear-gradient(#161b22, #00afb5);
     color: white;
+    font-family: "Lato", sans-serif;
+}
+
+.project-item:nth-of-type(4) h4,
+.project-info-item:nth-of-type(4) .key p {
+    color: #f00;
+    font-family: "Tourney", cursive;
 }
 
 i {
@@ -399,18 +487,8 @@ i {
     margin: 0.5rem;
 }
 
-i:hover{
+i:hover {
     color: #00afb5;
-}
-
-.project-item button {
-    color: #00afb5;
-    background: linear-gradient(to right, #161b22, #242f3e);
-}
-
-.project-item button:hover {
-    color: #161b22;
-    background: #00afb5;
 }
 
 .projects-carousel-container {
@@ -420,7 +498,7 @@ i:hover{
 }
 
 .project-descriptions li {
-    list-style-type:circle ;
+    list-style-type: circle;
     font-size: small;
 }
 
@@ -442,8 +520,7 @@ i:hover{
 
 .github-section h2,
 .github-section h3,
-.github-section h3
-    {
+.github-section h3 {
     font: "Exo", sans-serif;
     font-weight: 300;
 }
@@ -485,6 +562,6 @@ button[type="submit"] {
 
 /* ------------------------- Map */
 
-div#map {
+div #map {
     min-height: 360px;
 }
