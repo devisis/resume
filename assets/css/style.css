@@ -514,13 +514,13 @@ footer {
 
 .project-item:nth-of-type(4) h4,
 .project-info-item:nth-of-type(4) .key p {
-    color: maroon;
+    color: #f00;
     font-family: "Tourney", cursive;
 }
 
 .project-item:nth-of-type(4) img {
     padding-bottom: 2px;
-    border-bottom: 1px solid f00;
+    border-bottom: 1px solid maroon;
     border-radius:10%;
 }
 
