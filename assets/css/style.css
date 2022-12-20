@@ -238,9 +238,11 @@ footer {
 .personal-info-item,
 .project-info-item {
     padding-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: block;
     clear: both;
+    border-radius: 1%;
+    min-height: 80px;
 }
 
 .project-info-item .key,
@@ -388,6 +390,12 @@ footer {
     font-size: 20px;
 }
 
+/* Projects Misc */
+/* 
+.glow {
+    
+} */
+
 /* Sandras Kitchen */
 .project-item:nth-of-type(1) i:hover {
     color: #0d6efd;
@@ -397,7 +405,7 @@ footer {
     background: #0d6efd;
 }
 
-.project-item:nth-of-type(1) {
+.project-item:nth-of-type(1), .project-info-item:nth-of-type(1) {
     background: linear-gradient(#052236, #161b22);
     color: white;
     font-family: 'Dosis', sans-serif;
@@ -432,7 +440,7 @@ footer {
     background: #28a745;
 }
 
-.project-item:nth-of-type(2) {
+.project-item:nth-of-type(2), .project-info-item:nth-of-type(2) {
     background: linear-gradient(#161b22, #777777);
     color: white;
     font-family: 'Lato', sans-serif;
@@ -469,7 +477,7 @@ footer {
 
 }
 
-.project-item:nth-of-type(3) {
+.project-item:nth-of-type(3), .project-info-item:nth-of-type(3) {
     background: linear-gradient(#0a72e7, #020911);
     color: #fca311;
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -506,7 +514,7 @@ footer {
 
 }
 
-.project-item:nth-of-type(4) {
+.project-item:nth-of-type(4), .project-info-item:nth-of-type(4) {
     background: linear-gradient(#161b22, #00afb5);
     color: white;
     font-family: "Lato", sans-serif;
@@ -538,6 +546,13 @@ i {
 
 i:hover {
     color: #00afb5;
+}
+
+
+/* Project Carousel */
+.carousel-item img:hover {
+    width: 75%;
+
 }
 
 .projects-carousel-container {
@@ -575,7 +590,8 @@ i:hover {
 }
 
 .git-main-section {
-    background-color: #21262d;
+    background: linear-gradient(#21262d, black);
+    padding-bottom: 5%;
 }
 
 .git-side-section,
@@ -583,6 +599,14 @@ i:hover {
     color: white;
 }
 
+.gh-repo-cont {
+    border: 2px solid black;
+    border-radius: 1%;
+    width: fit-content;
+    background: linear-gradient(black, #21262d);
+    height: 50%;
+    margin: 0 auto;
+}
 
 /* ------------------------- Contact Form */
 
